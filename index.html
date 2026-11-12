@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div>
+        <label for="campoTamanho">Tamanho da Senha:</label>
+        <input type="number" id="campoTamanho" min="1" max="24" value="8">
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="maiusculas" checked>
+            Incluir Letras Maiúsculas
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" id="minusculas" checked>
+            Incluir Letras Minúsculas
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" id="numeros" checked>
+            Incluir Números
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" id="simbolos" checked>
+            Incluir Símbolos
+        </label>
+        <br><br>
+
+        <button id="gerar-senha">Gerar Senha</button>
+        <button id="limpar-senha">Limpar</button>
+
+        <br><br>
+        <label for="senha">Senha Gerada:</label>
+        <input type="text" id="senha" readonly>
+        <p id="mensagem"></p>
+    </div>
+
+    
+</body>
+</html>
